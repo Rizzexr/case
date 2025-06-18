@@ -1,0 +1,117 @@
+html, body {
+    background: linear-gradient(to right, #f0f2f5, #e2e6ec);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    -webkit-user-select: none; /* Для Chrome, Safari */
+    -moz-user-select: none; /* Для Firefox */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+    user-select: none; /* Стандартное свойство */
+}
+img {
+  user-select: none;       /* Нельзя выделить */
+  -webkit-user-drag: none; /* Запрет на перетаскивание в WebKit-браузерах */
+  pointer-events: none;    /* (опционально) запрет взаимодействия */
+}
+
+.top-element {
+            position: fixed; /* Фиксированное положение относительно окна браузера */
+            top: 0; /* Расположение от верхнего края */
+            left: 0; /* Расположение от левого края */
+            z-index: 9999; /* Высокий приоритет отображения */
+            background-color: #fff; /* Пример фона */
+            color: #1e1e1e; /* Цвет текста */
+            padding: 10px; /* Внутренние отступы */
+            margin: 2vh;
+            margin-left: 5vh;
+            padding-right: 3vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5vh;
+
+            text-align: center;
+}
+#lable-logo{
+    width: 2vw;
+    margin-right: 3vh;
+}
+.abouth-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.regions {
+    display: flex;
+    flex-wrap: wrap; /* добавляет перенос строк */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#block-logo{
+    width: 20vw;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+}
+.labes{
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    background: #fff;
+    width: 20vw;
+    height: 7vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #1e1e1e;
+    -webkit-tap-highlight-color: transparent;
+
+    transition: scale 0.2s ease-in-out;
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    margin-top: 2vw;
+}
+a:hover{
+    scale: 1.05;
+}

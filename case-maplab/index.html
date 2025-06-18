@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="maps/media/logo.png">
+    <title>MapLab</title>
+    <script>
+    // Блокировка ПКМ
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Блокировка F12 и Ctrl+Shift+I
+    document.addEventListener('keydown', e => {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')) {
+            e.preventDefault();
+            return false;
+        }
+    });
+</script>
+</head>
+<body>
+    <div class="top-element"><img src="maps/media/logo.png" id="lable-logo">MapLab | Иван Пресняков</div>
+
+    <main>
+        <div class="abouth-text">
+            <b>MapLab разработана: Иван Пресняков</b>
+            <p>Выбирайте регион, раскрашивайте страны и сохраняйте красивые карты. Создавайте уникальные изображения быстро и легко!</p>
+        </div>
+        <div class="regions">
+            <a href="#">
+                <div class="block">
+                    <img src="maps/media/InProgress.png" id="block-logo">
+                    <div class="labes">
+                        Планета Земля
+                    </div>
+                </div>
+            </a>
+            <a href="maps/SouthAmerica.html">
+                <div class="block">
+                    <img src="maps/media/SouthAmerica-logo.png" id="block-logo">
+                    <div class="labes">
+                        Южная Америка
+                    </div>
+                </div>
+            </a>
+            <a href="maps/NorthAmerica.html">
+                <div class="block">
+                    <img src="maps/media/NorthAmerica-logo.png" id="block-logo">
+                    <div class="labes">
+                        Северная Америка
+                    </div>
+                </div>
+            </a>
+            <a href="maps/Europe.html">
+                <div class="block">
+                    <img src="maps/media/Europe-logo.png" id="block-logo">
+                    <div class="labes">
+                        Европа
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="block">
+                    <img src="maps/media/InProgress.png" id="block-logo">
+                    <div class="labes">
+                        Азия
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="block">
+                    <img src="maps/media/InProgress.png" id="block-logo">
+                    <div class="labes">
+                        Африка
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
